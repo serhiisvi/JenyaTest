@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web01</title>
+    <link rel="stylesheet" href="/Users/serhii/programming/css-demo">
+</head>
+<!--СВЕРХУ - ВНУТРЯНКА СТРАНИЦЫ-->
+<!--НИЖЕ - ТЕЛО СТРИНИЦЫ-->
+
+<body>
+    <header> <!-- тег помогает сделать шапку для блока тела страницы -->
+        <nav> <!-- тег групирует в себя навигационные ссылки в шапке -->
+            <ul>
+                <li>Продукт</li>
+                <li>Решения</li>
+                <li>Ресурсы</li>
+                <li>Предприятия</li>
+                <li>Тарифы</li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- тег отвечает за главную часть страницы (основной контент) помогает браузеру-->
+        <section> <!-- делит общий экран на блоки (помогает браузеру видеть секции страницы)-->
+            <h1>Место для командной работы</h1>
+            <p>Интерактивная онлай-доска для совместной работы команд, в любое время в любом месте</p>
+            <div style="text-align: center;">
+                <img src="https://verbaltovisual.com/wp-content/uploads/2023/01/DigitalMinimalism_7_Round.png"
+                    alt="Изображение Digital Minimalism" class="foto">
+            </div>
+        </section>
+        <section>
+            <h2>Работайте вместе, где бы вы не находились</h2>
+            <p>Работая в офисе, удалённо или в гибридном формате с SerMar ваша <br>
+                команда может общаться, сотрудничать и совместно заниматься творчеством <br>
+                в одном пространстве.</p>
+            <div style="text-align: center;">
+                <a href="#" id="href">Узнать больше</a><br>
+                <img src="https://cdn-st2.vigbo.com/u53873/66414/blog/6782651/6596529/86636037/1000-bd6d9c371da29f415aa64ea18c3659ce.jpg"
+                    height="420" alt="Изображение эстетичного помещения" class="foto">
+            </div>
+        </section>
+        <section>
+            <div style="text-align: center;">
+                <img src="https://i.pinimg.com/736x/30/e4/a8/30e4a8da489c150ca709a6d0ad598169.jpg"
+                    alt="Изображение old money атмосферы" class="foto">
+            </div>
+            <h2>Закройте лишние вкладки - всё уже здесь</h2>
+            <p>Редактируете ли вы документы в Google Docs, работаете над <br>
+                другими задачами или созваниваетесь в Zoom,- Serjo предлагает <br>
+                более простое решение. Один сервис.</p>
+            <a href="#" id="href">Узнать больше</a>
+        </section>
+
+        <section>
+            <div class="table1">
+                <table>
+                    <caption>Пояснение к табл.</caption>
+                    <thead>
+                        <tr>
+                            <th>Название 1</th>
+                            <th colspan="2">Название 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Эстетика</td>
+                            <td>Программирование</td>
+                            <td>Обмен</td>
+                        </tr>
+                        <tr>
+                            <td>Расходы</td>
+                            <td>Эффективность</td>
+                            <td>Валюта</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td>Общий итог</td>
+                    </tfoot>
+                </table>
+            </div>
+            <p> </p>
+            <div class="table2">
+                <table>
+                    <caption>Таблица расходов и доходов</caption>
+                    <thead>
+                        <tr>
+                            <th>Год</th>
+                            <th colspan="2">2024</th>
+                            <th colspan="2">2025</th>
+                        </tr>
+                        <tr class="table2">
+                            <th>Полугодие</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>1</th>
+                            <th>2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Доход</td>
+                            <td>1500$</td>
+                            <td>1800$</td>
+                            <td>2000$</td>
+                            <td>3000$</td>
+                        </tr>
+                        <tr>
+                            <td>Расход</td>
+                            <td>-500$</td>
+                            <td>-600$</td>
+                            <td>-700$</td>
+                            <td>-1000$</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Итог</td>
+                            <td>1000$</td>
+                            <td>1200$</td>
+                            <td>1300$</td>
+                            <td>2000$</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <form action="#"> <!-- action указывает, куда отправится форма-->
+                <div> <!-- для группировки элементов, помогает браузеру, для CSS-->
+                    <label for="volume">Громкость</label>
+                    <input type="range" name="volume" id="volume" min="0" max="10" step="2">
+                    <label for="num">Оценка</label>
+                    <input type="number" name="num" id="num" min="1" max="5" step="1">
+                </div>
+                <p></p>
+                <div>
+                    <label for="query">Введите запрос</label>
+                    <input type="text" placeholder="Запрос" id="query" name="search_query" minlength="3" maxlength="20"
+                        pattern="[A-Za-z]" title="введите корректный запрос (A-Z, a-z)">
+                </div>
+                <div>
+                    <label for="agree">Согласен с обработкой данных</label>
+                    <input type="checkbox" name="agree" id="agree">
+                </div>
+                <div>
+                    <input type="radio" name="search" id="all" value="all">
+                    <label for="all">Поиск повсюду</label>
+                </div>
+                <div>
+                    <input type="radio" name="search" id="youtube" value="youtube">
+                    <label for="youtube">Поиск на YouTube</label>
+                </div>
+                <div>
+                    <label for="topic">Тематика</label>
+                    <select name="topic" id="topic"> <!--select создаёт выпадающий список-->
+                        <option value="1">Общее</option> <!-- для настройки самого списка (внутренности)-->
+                        <optgroup label="Популярные">
+                            <option value="2" selected>Избранные</option>
+                            <!--selected помогает автоматически показать первым в списке-->
+                            <option value="3">Особенные</option>
+                        </optgroup> <!-- группа внутри select -->
+                        <optgroup label="Редкоиспользуемые">
+                            <option value="4">Тренды</option>
+                            <option value="5">Стиль</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <button>Искать на YouTube</button>
+            </form>
+            <div>
+                <label for="text">Комментарий</label>
+                <textarea name="text" id="text" rows="3" cols="20" placeholder="введите текст"></textarea>
+            </div>
+        </section>
+
+        <section id="demoform"> <!--Вообще перед этим тегом идет тег main, но он на стр только один раз по семантике-->
+            <br></br>
+            <h2 id="demo">Demo Form</h2>
+            <h3 id="demoh3">Свяжитесь со мной</h3>
+            <form action="#">
+                <div>
+                    <label for="email" id="delabel1">E-Mail</label>
+                    <input type="email" id="deinp1" name="email" placeholder="Введите E-Mail" required>
+                </div>
+                <form action="#">
+                    <div>
+                        <label for="telegram" id="delabel2">Telegram</label>
+                        <input type="text" id="deinp2" name="telegram" placeholder="Введите Telegram">
+                    </div>
+                    <div>
+                        <label for="topic" id="delabel3">*Тема*</label>
+                        <select name="topic" id="deselect" required>
+                            <option value="courses" id="deopti1">Приобретение курсов</option>
+                            <option value="feedback" id="deopti2">Обратная связь</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comment" id="delabel4">Комментарий</label>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="debutton">Отправить</button>
+                    <br></br>
+                </form>
+        </section>
+
+    </main>
+    <footer>
+        <div>&#169; 2025.10 </div>
+        <div>
+            <a href="#">Условия пользования</a>
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Управление файлами Cookies</a>.
+        </div>
+    </footer>
+</body>
+
+</html>
